@@ -9,7 +9,7 @@ body {
   width: 100%;
 }
 .container {
-  width: 70vw;
+  width: 80vw;
 
   padding: 2rem 1rem;
   margin: 0 auto;
@@ -21,19 +21,20 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2vw;
   margin-bottom: 1rem;
 }
 .header-title {
-  font-size: 1.7rem;
+  font-size: 4vw;
   line-height: 2rem;
   font-weight: 700;
+  text-align: center;
 }
 .header-des {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
-  width: 600px;
+  max-width: 600px;
   text-align: center;
   color: rgb(133, 130, 130);
 }
@@ -41,8 +42,13 @@ body {
 /* main container */
 .main-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  /* grid-template-columns: repeat(3, 1fr);*/
+  gap: 1rem; 
+
+  /* uses of auto fit */
+  grid-template-columns: repeat(auto-fit, minmax(200px,300px));
+  justify-content: center; 
+  align-items: center; 
 }
 .card-container {
   overflow: hidden;
@@ -121,8 +127,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-
-.name{
+.name {
   color: red;
   font-size: 30px;
   margin-bottom: 200px;
